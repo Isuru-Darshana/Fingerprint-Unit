@@ -22,7 +22,7 @@ Person people[] = {
   {2, "Chandu Shaviska", "193/1 Pahalagama Thebuwana", "200111302664"},
   {3, "Ashan Bandara ", "196/1 Udagunnepana Gunnepana", "200033600160"},
   {4, "Arunalu Rathnathunga", "214 Mulana Narawala Poddala", "200116902899"},
-   {7, ""}};
+  };                                                                        //Information of People
 const int peopleCount = sizeof(people) / sizeof(Person);
 
 void setup() {
@@ -73,7 +73,7 @@ void displayPersonInfo(const Person &person) {
   delay(1000); // Sound buzzer for 1 second
   digitalWrite(buzzerPin, LOW);
 }
-
+//Displaying Information on Ardu Spreadsheet
 void logData(const Person &person) {
   
   String dataToLog = String(person.id) + "," + person.name + "," + person.address + "," + person.nic;
